@@ -1,0 +1,94 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: monospace;
+}
+body {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(#200016, #10001f);
+}
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  position: fixed;
+  top: 10px;
+  z-index: 1;
+  margin: 20px;
+}
+.header #logo {
+  width: 50%;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #fff;
+  letter-spacing: 1.6px;
+  font-size: 20px;
+  font-weight: bold;
+}
+.header ul {
+  width: 50%;
+  display: flex;
+  list-style: none;
+}
+.header ul li {
+  margin: 0 20px;
+}
+.header ul li a {
+  text-decoration: none;
+  text-transform: capitalize;
+  font-size: 18px;
+  color: #fff;
+  letter-spacing: 1.4px;
+  font-weight: bold;
+  padding: 10px 20px;
+  transition: 0.3s;
+}
+.header ul li a:hover,
+.header ul li a.active {
+  background-color: #fff;
+  color: #000;
+  border-radius: 50px;
+}
+.main {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content:center ;
+  align-items: center;
+  overflow: hidden;
+}
+.main img {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+#moon{
+    mix-blend-mode: screen;
+    transform: translateY(50px);
+}
+.parg{
+    padding: 20px;
+    color: #fff;
+}
+.parg h2{
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+.parg p{
+    font-size: 17px;
+    margin: 10px;
+}
+.main:after{
+  content: " ";
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+background: linear-gradient(360deg,#200016,transparent);}
